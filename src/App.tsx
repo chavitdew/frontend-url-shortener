@@ -51,18 +51,24 @@ const App: React.FC = () => {
 const styles: { [key: string]: React.CSSProperties } = {
   container: {
     maxWidth: 400,
-    margin: "100px auto",
+    margin: "50px auto",
+    padding: "1rem",
     textAlign: "center",
     fontFamily: "sans-serif",
+    width: "90%", // Make it flexible
+    boxSizing: "border-box"
   },
   form: {
     display: "flex",
     flexDirection: "column",
     gap: 10,
+    width: "100%"
   },
   input: {
     padding: "10px",
-    fontSize: 16,
+    fontSize: "1rem",
+    width: "100%",
+    boxSizing: "border-box"
   },
   button: {
     padding: "10px",
@@ -70,16 +76,20 @@ const styles: { [key: string]: React.CSSProperties } = {
     color: "white",
     border: "none",
     cursor: "pointer",
+    fontSize: "1rem",
+    width: "100%"
   },
   result: {
     marginTop: 20,
+    wordBreak: "break-word"
   },
   smallBtn: {
     margin: "5px",
     padding: "6px 12px",
-    fontSize: 14,
-    cursor: "pointer",
-  },
+    fontSize: "0.9rem",
+    cursor: "pointer"
+  }
 };
+
 
 export default App;
